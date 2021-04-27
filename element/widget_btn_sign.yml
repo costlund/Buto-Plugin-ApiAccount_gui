@@ -1,0 +1,16 @@
+-
+  type: a
+  attribute:
+    class: btn btn-primary plubin_api_account_gui_btn_sign_in
+    onclick: PluginApiAccount_gui.sign_form()
+    style:
+      display: none
+  innerHTML: Sign in
+-
+  type: a
+  attribute:
+    class: btn btn-primary plubin_api_account_gui_btn_sign_out
+    onclick: PluginApiAccount_gui.sign_out()
+    style:
+      display: none
+  innerHTML: Sign out

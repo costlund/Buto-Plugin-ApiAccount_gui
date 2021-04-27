@@ -1,0 +1,6 @@
+-
+  type: a
+  attribute:
+    class: btn btn-info
+    onclick: PluginApiAccount_gui.sign_check()
+  innerHTML: Check

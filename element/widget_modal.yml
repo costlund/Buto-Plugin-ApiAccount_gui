@@ -1,0 +1,114 @@
+-
+  type: div
+  attribute:
+    class: 'modal fade'
+    id: plubin_api_account_gui_signinModal
+    tabindex: '-1'
+    role: dialog
+    aria-labelledby: plubin_api_account_gui_ModalLabel
+    aria-hidden: 'true'
+  innerHTML:
+    -
+      type: div
+      attribute:
+        class: modal-dialog
+        role: document
+      innerHTML:
+        -
+          type: div
+          attribute:
+            class: modal-content
+          innerHTML:
+            -
+              type: div
+              attribute:
+                class: modal-header
+              innerHTML:
+                -
+                  type: h5
+                  attribute:
+                    class: modal-title
+                    id: plubin_api_account_gui_ModalLabel
+                  innerHTML: 'Sign in'
+                -
+                  type: button
+                  attribute:
+                    type: button
+                    class: close
+                    data-dismiss: modal
+                    aria-label: Close
+                  innerHTML:
+                    -
+                      type: span
+                      attribute:
+                        aria-hidden: 'true'
+                      innerHTML: '&times;'
+            -
+              type: div
+              attribute:
+                class: modal-body
+              innerHTML:
+                -
+                  type: form
+                  innerHTML:
+                    -
+                      type: div
+                      attribute:
+                        class: form-group
+                      innerHTML:
+                        -
+                          type: label
+                          attribute:
+                            for: plubin_api_account_gui_signinEmail
+                          innerHTML: 'Username'
+                        -
+                          type: input
+                          attribute:
+                            type: input
+                            class: form-control
+                            id: plubin_api_account_gui_signinEmail
+                            aria-describedby: plubin_api_account_gui_emailHelp
+                            placeholder: 'Enter email'
+                            value: 'claes.webforms'
+                        -
+                          type: small
+                          attribute:
+                            id: plubin_api_account_gui_emailHelp
+                            class: 'form-text text-muted'
+                          innerHTML: 'We''ll never share your email with anyone else.'
+                    -
+                      type: div
+                      attribute:
+                        class: form-group
+                      innerHTML:
+                        -
+                          type: label
+                          attribute:
+                            for: plubin_api_account_gui_signinPassword
+                          innerHTML: Password
+                        -
+                          type: input
+                          attribute:
+                            type: password
+                            class: form-control
+                            id: plubin_api_account_gui_signinPassword
+                            placeholder: Password
+            -
+              type: div
+              attribute:
+                class: modal-footer
+              innerHTML:
+                -
+                  type: button
+                  attribute:
+                    type: button
+                    class: 'btn btn-secondary'
+                    data-dismiss: modal
+                  innerHTML: Close
+                -
+                  type: button
+                  attribute:
+                    type: button
+                    class: 'btn btn-primary'
+                    onclick: PluginApiAccount_gui.sign_in()
+                  innerHTML: 'Sign in'

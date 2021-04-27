@@ -1,0 +1,6 @@
+-
+  type: a
+  attribute:
+    class: btn btn-secondary
+    onclick: PluginApiAccount_gui.alert_data()
+  innerHTML: Data
