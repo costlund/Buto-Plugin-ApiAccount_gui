@@ -3,7 +3,7 @@ function PluginApiAccount_gui(){
   this.interval = null;
   this.event = new Event('api_account_gui_success');
   this.data = {}
-  this.url = 'http://localhost';
+  this.url = '';
   this.api = 'api_v2';
   this.sign_check = function(){
     clearInterval(this.interval);
