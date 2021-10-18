@@ -1,5 +1,10 @@
 -
   type: div
+  settings:
+    globals:
+      -
+        path_to_key: 'settings/plugin/i18n/translate_v1/settings/path'
+        value: '/plugin/api/account_gui/i18n'
   attribute:
     class: 'modal fade'
     id: plubin_api_account_gui_signinModal
@@ -70,12 +75,6 @@
                             aria-describedby: plubin_api_account_gui_emailHelp
                             placeholder: 'Enter email'
                             value: 'claes.webforms'
-                        -
-                          type: small
-                          attribute:
-                            id: plubin_api_account_gui_emailHelp
-                            class: 'form-text text-muted'
-                          innerHTML: 'We''ll never share your email with anyone else.'
                     -
                       type: div
                       attribute:
